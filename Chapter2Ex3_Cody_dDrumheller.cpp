@@ -18,14 +18,21 @@ Requirements: Assuming the ocean’s level is currently rising at about 1.5 millim
 
 #include <iostream>
 using namespace std;
-const double levelRise = 1.5;
+//const double levelRise = 1.5;
 
 int main()
 {
+	
+	double YearLevel5;
+	double YearLevel7;
+	double YearLevel10;
+	double levelRise;
+	cout << " Please enter the amount of level rise";
+	cin >> levelRise;
+	YearLevel5 = levelRise * 5; 
+	YearLevel7 = levelRise * 7;
+	YearLevel10 = levelRise * 10;
 
-	double YearLevel5 = levelRise * 5;
-	double YearLevel7 = levelRise * 7;
-	double YearLevel10 = levelRise * 10;
 	cout << " After 5 years the Ocean will have risen " << YearLevel5 << " millimeters" << endl;
 	cout << " After 7 years the Ocean will have risen " << YearLevel7 << " millimeters" << endl;
 	cout << " After 10 years the Ocean will have risen " << YearLevel10 << " millimeters" << endl;
